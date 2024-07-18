@@ -26,6 +26,7 @@ require_once ART_SYNC_PLUGIN_PATH . 'includes/common/art-sync-common.php';
 require_once ART_SYNC_PLUGIN_PATH . 'includes/constants/art-sync-constants.php';
 require_once ART_SYNC_PLUGIN_PATH . 'includes/tables/art-sync-tables.php';
 require_once ART_SYNC_PLUGIN_PATH . 'includes/settings/art-sync-settings.php';
+require_once ART_SYNC_PLUGIN_PATH . 'includes/custom-post-types/art-sync-cpt.php';
 
 
 /** Activation Plugin  */
@@ -69,3 +70,4 @@ if( ! function_exists('art_sync_plugin_settings_link') ) {
 }
 
 add_filter('plugin_action_links_' . plugin_basename(__FILE__), 'art_sync_plugin_settings_link');
+
